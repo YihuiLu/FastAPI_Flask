@@ -1,0 +1,12 @@
+[flake8]
+max-line-length = 120
+exclude = .git,migrations/*,__init__.py,sql_session.py
+
+per-file-ignores =
+    __init__.py: F401,F403
+    setup.py: E121
+    other/*: W9
+    data_processing.py: W291
+    proposal.py: W291
+    coordTransform.py: E502, E127
+    economic.py: W291
